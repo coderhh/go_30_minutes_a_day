@@ -40,4 +40,12 @@ func main() {
 		}
 	}
 	fmt.Println("2d: ", twoD)
+
+	s1 := []int{1, 2}
+	s2 := []int{3, 4}
+	s3 := append(s1, s2...)
+	fmt.Printf("%v\n", s3)
+	fmt.Printf("s1: %p\n", s1)
+	fmt.Printf("s2: %p\n", s2)
+	fmt.Printf("s3: %p\n", s3)
 }
